@@ -1,0 +1,41 @@
+ /* テーブルの装飾 */
+table{
+    /* 電卓のサイズ */
+    width: 100px;
+    height: 100px;
+    /*インライン要素を中央に配置*/
+    text-align: center;
+    /*余白調整*/
+    padding: 8px;
+    margin: 20px;
+}
+
+input{
+    width: 100px; /*ボタンのサイズ*/
+    height: 30px;
+    font-size: x-large; /*ボタンの文字サイズ*/
+    background-color:#dcdcdca4;
+    outline: none;      /* クリック時の黒枠を消す */
+}
+ /* 「AC」と「=」 ボタン２列にする */
+input[type="button"][value="AC"],equal {
+    width: 200px;
+}
+input[type="button"][value="="],equal {
+    width: 200px;
+}
+
+ /* ディスプレイの詳細設定 */
+ .display{
+    width: 400px;
+    text-align: right;
+      /* 見た目の詳細設定 */
+      background: white;
+ }
+    /* クリック時に色を濃くする */
+    input:active {
+        background-color: #aaa;
+    }
+.operator:active {
+    background: #2c80b4;
+}
